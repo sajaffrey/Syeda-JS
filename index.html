@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture store</title>
+
+    <!-- 4 Third-party JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bideo.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="navcontainer">
+            <a href="#" class="logo">
+                <img src="/assets/images/198fc8a2981818511dd4c313c2176ff8.jpg" alt="Furniture Store Logo">
+            </a>
+            <p class="furnicom">FURNICOM</p>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Your Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section>
+        <div class="herocontainer">
+            <h1 class="h1">Welcome to Our Furniture Store</h1>
+            <div class="slider">
+                <img src="/assets/images/9-best-online-furniture-stores-to-browse-for-new-home-furnishings.webp" alt="Living room">
+                <img src="/assets/images/online furniture stores 210224 MAIN SH_MODERN_COMFY_TRULLO SOFA_2460_F1 COPY.webp" alt="antique room">
+                <video src="/assets/video/3773486-hd_1920_1080_30fps.mp4" alt="video image"> 
+            </div>
+        </div>
+    </section>
+
+    <!-- secondary section -->
+    <section class="secondarysection">
+        <h2>Our Products</h2>
+        <p>Explore our wide range of high-quality furniture items to enhance your home decor. From modern designs to
+        classic pieces, we have everything you need to create a comfortable and stylish living space.</p>
+
+        <!-- article for products -->
+        <article id="productList">
+            <div class="articlecontainer">
+                <div class="product">
+                    <img src="/assets/images/modernnogreensofaset.webp" alt="Green Lounge Suite">
+                    <div class="product-details">
+                        <h3 class="product-title">Green Lounge Suite</h3>
+                        <p class="product-price">$429.99</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 1', 99.99)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="/assets/images/0025895_nebula-sectional-sofa-with-storage-ottoman-drop-down-console-dark-grey_800.jpeg" alt="Coastal Comfort Lounge Set">
+                    <div class="product-details">
+                        <h3 class="product-title">Coastal Comfort Lounge Set</h3>
+                        <p class="product-price">$251.99</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 2', 149.99)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="/assets/images/1684173878-marlow-curve-3-seater-sofa-square-set-1-1-1658992876-64627428a76e3.jpg" alt="Modern Luxe Sofa Collection">
+                    <div class="product-details">
+                        <h3 class="product-title">Modern Luxe Sofa Collection</h3>
+                        <p class="product-price">$351.99</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 2', 149.99)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="/assets/images/Belmont_8979d2ea-2229-435c-9692-f705085c45d3_1445x.webp" alt="Vintage Charm Lounge Set">
+                    <div class="product-details">
+                        <h3 class="product-title">Vintage Charm Lounge Set</h3>
+                        <p class="product-price">$380</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 2', 149.99)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="/assets/images/online furniture stores 210224 MAIN SH_MODERN_COMFY_TRULLO SOFA_2460_F1 COPY.webp" alt="Zen Haven Sofa Ensemble">
+                    <div class="product-details">
+                        <h3 class="product-title">Zen Haven Sofa Ensemble</h3>
+                        <p class="product-price">$291.99</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 2', 149.99)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="/assets/images/40083_n_DYLAN_SMALL.jpg" alt="Urban Retreat Sofa Set">
+                    <div class="product-details">
+                        <h3 class="product-title">Urban Retreat Sofa Set</h3>
+                        <p class="product-price">$330</p>
+                    </div>
+                    <button id="addtocart" onclick="addToCart('Product 2', 149.99)">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footer-col">
+                <ul>
+                    <li><h3>Contact Us</h3></li>
+                    <li><p>123 Furniture Street<br>City, State ZIP</p></li>
+                    <li><p>Phone: +1 234 567 890</p></li>
+                    <li><p>Email: info@example.com</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><h3>Quick Links</h3></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><h3>Follow Us</h3></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Furniture Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- js tag -->
+    <script src="assets/main/main.js"></script>
+</body>
+
+</html>
